@@ -4,9 +4,11 @@ import Box from '../components/Box';
 export default {
   title: 'Example/Box',
   component: Box,
-  //argTypes: {
-    //backgroundColor: { control: 'color' },
-  //},
+  argTypes: {
+    width: { control: "number" },
+    height: { control: "number" },
+    backgroundColor: { control: "color" },
+  },
 };
 
 const Template = (args) => <Box {...args} />;
